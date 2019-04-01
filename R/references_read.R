@@ -1,6 +1,6 @@
-#' Reads Thomson Reuters Web of Knowledge/Science and ISI reference export files (.txt and .ciw)
+#' Reads Clarivate Analytics Web of Science and ISI reference export files (.txt and .ciw)
 #'
-#' \code{references_read} This function reads Thomson Reuters Web of Knowledge
+#' \code{references_read} This function reads Clarivate Analytics Web of Science
 #' and ISI format reference data files into an R friendly data format.
 #'
 #' @param data either a directory, used in conjuction with dir=TRUE, or a file
@@ -15,7 +15,7 @@
 #' 
 references_read <- function(data = ".", dir = FALSE, include_all=FALSE) {
  ## 	NOTE: The fields stored in our output table are a combination of the
- ## 		"Thomson Reuters Web of Knowledge" FN format and the "ISI Export
+ ## 		"Clarivate Analytics Web of Science" FN format and the "ISI Export
  ## 		Format" both of which are version 1.0:
   output <- data.frame(
   "filename" = character(0),
